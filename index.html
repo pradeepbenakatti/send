@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards Example</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: Poppins;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(193, 243, 181);
+
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            /* top: 10vh; */
+            height: 60vh;
+            margin-top: 50px;
+        }
+
+        .card {
+            width: 250px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        h3 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            color: #555;
+        }
+
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 100%;
+        }
+        h1{
+            font-size: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <marquee behavior="alternate"><h1>Resource around JCER</h1></marquee>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://ideogram.ai/assets/image/lossless/response/w0zpH_TOT7uHz-rKIfaU8Q" alt="PG Image"
+                class="card-image">
+            <h3>PG</h3>
+            <p>Find the best PGs near you.</p>
+            <button onclick="window.location.href='pg.html'">Visit PG</button>
+        </div>
+        <div class="card">
+            <img src="https://ideogram.ai/assets/image/lossless/response/z-cDsv6cQWuYMCGBdEiK5w" alt="Mess Image" class="card-image">
+            <h3>Mess</h3>
+            <p>Explore mess options </p>
+            <button onclick="window.location.href='mess.html'">Visit Mess</button>
+        </div>
+        <div class="card">
+            <img src="https://ideogram.ai/assets/image/lossless/response/HrVMrkLoSFivNhm5FtPYrg" alt="Stationary Image" class="card-image">
+            <h3>Stationary</h3>
+            <p>Get all your stationary needs.</p>
+            <button onclick="window.location.href='stationary.html'">Visit Stationary</button>
+        </div>
+        <div class="card">
+            <img src="https://ideogram.ai/assets/image/lossless/response/SkE7gj9DRP6gK1nhlCSSUw" alt="Hospital Image" class="card-image">
+            <h3>Hospital</h3>
+            <p>Find nearby hospitals. </p>
+            <button onclick="window.location.href='hospital.html'">Visit Hospital</button>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
